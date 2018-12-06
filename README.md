@@ -22,7 +22,7 @@ Create question answer app for one player that is based on the location of the v
 - [x] Connect API
 - [ ] Gather photo Assets
 - [ ] Add photo assets dependent on question to each question/answer page
-- [ ] Put Olya questions in json
+- [x] Put questions in json
 - [ ] Create controller for welcome screens
 - [ ] Art work and CSS
 
