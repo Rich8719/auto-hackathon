@@ -103,10 +103,10 @@ ul.question-options li:before {
     width: 100px;
     height: 100px;
     border-radius: 70px;
-    border: 12px #dd0b20 solid;
+    border: 12px #e6e6e6 solid;
     float: left;
     /* position: absolute; */
-    background-color: #e6e6e6;
+    background-color: #dd0b20;
     display: grid;
     grid-template-columns: 1;
     justify-content: center;
@@ -114,6 +114,8 @@ ul.question-options li:before {
     margin-top: -41px;
     margin-left: -39px;
     font-size: 4.5rem;
+    color: #fff;
+    line-height: 0px;
 }
 
 ul.question-options li a {
