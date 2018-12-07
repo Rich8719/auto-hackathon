@@ -1,9 +1,6 @@
 const data = require('../assets/questions.json') //get questions from json array  
 const location = 'Boston' // pull from api
 const game = data.Game[location].questions
-// const time = require('../util.js')
-const express = require('express')
-const app = express()
 let score = 0
 
 const QuizController = {	
@@ -26,7 +23,8 @@ const QuizController = {
 
 		res.render('index', {
 			question: question,
-			options: options
+			options: options,
+			id: id
 		})
 	},
 	
@@ -79,9 +77,13 @@ const QuizController = {
 	},
 
 	ad: (req, res) => {
+		const id = req.params.id
+		const correct = game[id].correct
+
 		res.render('ad', {
 			message: 'Times up!',
-			ad: 'This ad bought to you by your incompetence'
+			ad: 'This ad bought to you by your incompetence',
+			correct: correct
 		})
 	}
 }
