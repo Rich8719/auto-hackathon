@@ -7,16 +7,27 @@ body {
     width: 100%;
 }
 
-.container {
-    min-height: 1000px;
-    max-height: 100%;
-    padding: 5rem;
+body {
     background-color: #007eb5;
     background-image: url(/images/home-background.jpg);
-    background-size: 100%;
+    background-size: cover;
     background-color: transparent;
-    background-position: center top;
+    background-position: top;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+   /* min-height: 1000px;*/
+    height: 100%;
+    max-height: 100%;
+    padding: 5rem;
+    /*background-color: #007eb5;
+    background-image: url(/images/home-background.jpg);
+    background-size: cover;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;*/
 
 }
 
