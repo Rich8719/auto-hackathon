@@ -79,11 +79,13 @@ const QuizController = {
 	ad: (req, res) => {
 		const id = req.params.id
 		const correct = game[id].correct
+		let next = `/question/${parseInt(id) + 1}`
 
 		res.render('ad', {
 			message: 'Times up!',
 			ad: 'This ad bought to you by your incompetence',
-			correct: correct
+			correct: correct,
+			next: next
 		})
 	}
 }
